@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abhay — AI Software Engineer. Building intelligent, human-centered software.">
+    <meta name="author" content="Abhay">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <title>Abhay · AI Software Engineer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assests/favicon.svg">
+    <link rel="apple-touch-icon" href="assests/favicon.svg">
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Abhay · AI Software Engineer">
+    <meta property="og:description" content="Building intelligent, human-centered software — from ML systems to the interfaces that make them feel effortless.">
+    <meta property="og:image" content="assests/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Abhay · AI Software Engineer">
+    <meta name="twitter:description" content="Building intelligent, human-centered software.">
+    <meta name="twitter:image" content="assests/og-image.png">
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Abhay Pratap Singh Pundir",
+        "jobTitle": "AI Software Engineer",
+        "email": "mailto:pundirabhay963@gmail.com",
+        "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Software Engineering"],
+        "sameAs": [
+            "https://github.com/abhaypratapsinghpundir",
+            "https://www.linkedin.com/in/abhay-pratap-singh-pundir/",
+            "https://x.com/OneEyedAbhay"
+        ]
+    }
+    </script>
+
+    <!-- Set theme before paint to avoid a flash of the wrong theme -->
+    <script>
+        (function () {
+            var theme = 'light';
+            try {
+                var saved = localStorage.getItem('theme');
+                theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            } catch (e) {}
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo">Abhay</a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="assests/Abhay_Resume.pdf" class="nav-link nav-link-resume" target="_blank" rel="noopener">Résumé</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+                    <i class="fas fa-moon icon-moon"></i>
+                    <i class="fas fa-sun icon-sun"></i>
+                </button>
+                <button class="nav-burger" id="navBurger" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero / Home -->
+        <section id="home" class="hero">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="container hero-inner reveal">
+                <p class="hero-eyebrow">AI Software Engineer</p>
+                <h1 class="hero-title">
+                    Hi, I'm Abhay.<br>
+                    <span class="text-muted">I build intelligent software.</span>
+                </h1>
+                <p class="hero-sub">
+                    I design and ship AI-powered products — from machine&nbsp;learning
+                    systems to the clean interfaces that make them feel effortless.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View my work</a>
+                    <a href="assests/Abhay_Resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">
+                        Download résumé <i class="fas fa-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+            <a href="#about" class="scroll-hint" aria-label="Scroll down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="reveal">
+                        <p class="section-eyebrow">About</p>
+                        <h2 class="section-title">Engineering at the intersection of AI and craft.</h2>
+                        <p class="lead">
+                            I'm an AI software engineer focused on turning models into real,
+                            dependable products. I care about the whole pipeline — data,
+                            training, evaluation — and just as much about the experience around it.
+                        </p>
+                        <p class="lead">
+                            My goal is simple: build things that are intelligent under the hood
+                            and quietly simple on the surface.
+                        </p>
+                    </div>
+                    <div class="reveal">
+                        <h3 class="skills-heading">Tools &amp; technologies</h3>
+                        <div class="chips">
+                            <span class="chip">Python</span>
+                            <span class="chip">PyTorch</span>
+                            <span class="chip">TensorFlow</span>
+                            <span class="chip">Hugging Face</span>
+                            <span class="chip">LangChain</span>
+                            <span class="chip">FastAPI</span>
+                            <span class="chip">React</span>
+                            <span class="chip">TypeScript</span>
+                            <span class="chip">Docker</span>
+                            <span class="chip">AWS</span>
+                            <span class="chip">PostgreSQL</span>
+                            <span class="chip">Git</span>
+                        </div>
+
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat-num">15+</span>
+                                <span class="stat-label">Projects shipped</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-num">3+</span>
+                                <span class="stat-label">Years building</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-num">∞</span>
+                                <span class="stat-label">Curiosity</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="section-eyebrow">Work</p>
+                    <h2 class="section-title">Selected projects</h2>
+                    <p class="section-desc">A few things I've designed, trained, and shipped.</p>
+                </div>
+
+                <div class="filters reveal" id="filters">
+                    <button class="filter active" data-filter="all">All</button>
+                    <button class="filter" data-filter="ai">AI / ML</button>
+                    <button class="filter" data-filter="web">Web</button>
+                    <button class="filter" data-filter="tools">Tools</button>
+                </div>
+
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Cards are rendered by scripts/main.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="container contact-inner">
+                <div class="section-head reveal">
+                    <p class="section-eyebrow">Contact</p>
+                    <h2 class="section-title">Let's build something.</h2>
+                    <p class="section-desc">
+                        Have an idea, a role, or a question? Send a message — it lands straight in my inbox.
+                    </p>
+                </div>
+
+                <form class="contact-form reveal" id="contactForm" novalidate>
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name">
+                        <span class="error" data-error="name"></span>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+                        <span class="error" data-error="email"></span>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me a little about it…"></textarea>
+                        <span class="error" data-error="message"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <span>Send message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <p class="form-note" id="formNote" hidden></p>
+                </form>
+
+                <div class="contact-links reveal">
+                    <a href="mailto:pundirabhay963@gmail.com" class="contact-chip"><i class="fas fa-envelope"></i> pundirabhay963@gmail.com</a>
+                    <a href="https://github.com/abhaypratapsinghpundir" target="_blank" rel="noopener" class="contact-chip"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/abhay-pratap-singh-pundir/" target="_blank" rel="noopener" class="contact-chip"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://x.com/OneEyedAbhay" target="_blank" rel="noopener" class="contact-chip"><i class="fab fa-x-twitter"></i> X</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project detail modal -->
+    <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-backdrop" data-close></div>
+        <div class="modal-panel" role="document">
+            <button class="modal-close" data-close aria-label="Close">
+                <i class="fas fa-xmark"></i>
+            </button>
+            <div class="modal-content" id="modalContent"><!-- injected by JS --></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span class="nav-logo">Abhay</span>
+            <div class="footer-social">
+                <a href="https://github.com/abhaypratapsinghpundir" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abhay-pratap-singh-pundir/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/OneEyedAbhay" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                <a href="mailto:pundirabhay963@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>© <span id="year"></span> Abhay · AI Software Engineer. Built with care.</p>
+            <a href="#home" class="to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
