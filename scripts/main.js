@@ -88,88 +88,74 @@ function initReveal() {
    card and the detail modal (problem / approach / result case study). */
 const PROJECTS = [
     {
-        title: 'Neural Insight',
-        category: 'ai',
-        year: '2025',
-        icon: 'fa-brain',
-        role: 'Solo · ML + Full-stack',
-        description: 'LLM-powered analytics assistant that turns natural-language questions into live dashboards.',
-        tags: ['Python', 'LangChain', 'FastAPI', 'React'],
-        problem: 'Non-technical teams waited days on analysts to answer simple data questions, creating a bottleneck around every decision.',
-        approach: 'Built a retrieval-augmented agent that maps plain-English questions to validated SQL, runs them against a warehouse, and renders the result as an interactive chart — with guardrails to prevent unsafe queries.',
-        result: 'Cut time-to-answer from days to seconds and handled 80%+ of routine analytics requests without an analyst in the loop.',
-        github: '#',
-        demo: '#'
-    },
-    {
-        title: 'VisionKit',
-        category: 'ai',
-        year: '2024',
-        icon: 'fa-eye',
-        role: 'ML Engineer',
-        description: 'Real-time object detection and tracking pipeline optimized for edge devices.',
-        tags: ['PyTorch', 'OpenCV', 'ONNX'],
-        problem: 'A computer-vision model that ran fine on a GPU server was far too heavy to run on the low-power cameras it was meant for.',
-        approach: 'Distilled and quantized the detector, exported to ONNX, and rebuilt the tracking loop to run inference on-device with a fixed memory budget.',
-        result: 'Achieved real-time 30 FPS detection on edge hardware with a fraction of the original model size and no cloud round-trip.',
-        github: '#',
-        demo: '#'
-    },
-    {
-        title: 'Studio Portfolio',
+        title: 'Papped.co',
         category: 'web',
-        year: '2025',
-        icon: 'fa-palette',
-        role: 'Design + Front-end',
-        description: 'A fast, accessible, minimalist portfolio system with a design-token theming engine.',
-        tags: ['React', 'TypeScript', 'Vite'],
-        problem: 'Creatives needed portfolio sites that looked custom but could be themed and shipped quickly without rebuilding from scratch each time.',
-        approach: 'Designed a token-driven theming system so colors, type, and spacing flow from one config, with light/dark support and accessibility baked in.',
-        result: 'Reduced new-site setup from days to hours while keeping Lighthouse scores in the high 90s across performance and accessibility.',
-        github: '#',
-        demo: '#'
+        year: '2026',
+        icon: 'fa-camera',
+        role: 'Full-stack + Quality Engineering',
+        description: 'Camera-first event media platform that sends guest photos and video clips to a shared live gallery.',
+        tags: ['React', 'TypeScript', 'Cloudflare Workers', 'PostgreSQL', 'Playwright'],
+        problem: 'Event guests needed a fast way to contribute photos and video without installing an app, while organizers needed a reliable shared gallery.',
+        approach: 'Built a mobile-first PWA with an in-browser camera, offline-capable uploads, WebGL compositing, and a serverless API with JWT auth, validated requests, presigned uploads, and CORS hardening.',
+        result: 'Shipped a staging-gated workflow with Playwright and Vitest coverage, Sentry monitoring, and product analytics across the web and API.',
+        github: null,
+        demo: null
     },
     {
-        title: 'PromptForge',
-        category: 'tools',
-        year: '2024',
-        icon: 'fa-wand-magic-sparkles',
-        role: 'Open Source · Maintainer',
-        description: 'A CLI + library for versioning, testing, and evaluating prompts against model suites.',
-        tags: ['Python', 'Click', 'Pytest'],
-        problem: 'Prompt changes shipped with no tests — a tweak that helped one case silently broke five others, and nobody noticed until production.',
-        approach: 'Built a framework to version prompts, define expected-output assertions, and run them as a test suite across multiple models in CI.',
-        result: 'Brought regression testing to prompt engineering, catching quality drops before release and making prompt changes reviewable like code.',
-        github: '#',
-        demo: '#'
+        title: 'Compliance Test Automation',
+        category: 'testing',
+        year: '2026',
+        icon: 'fa-vial',
+        role: 'Program Analyst Trainee · Cognizant',
+        description: 'Quality engineering for a financial compliance platform handling SEC insider-filing workflows.',
+        tags: ['Java', 'Spring Boot', 'Selenium', 'TestNG', 'BDD'],
+        problem: 'Filing workflows need dependable validation and regression coverage because small defects can affect deadline-driven regulatory work.',
+        approach: 'Contributed to Java/Spring Boot services, SQL data models, filing validation rules, code reviews, and automated regression checks across the filing pipeline.',
+        result: 'Automated 70+ regression checks, reduced manual verification effort by 15%, and helped reduce bugs by 20%.',
+        github: null,
+        demo: null
     },
     {
-        title: 'DataPilot',
+        title: 'Portfolio',
         category: 'web',
-        year: '2023',
-        icon: 'fa-chart-line',
-        role: 'Full-stack',
-        description: 'Collaborative data-exploration app with real-time charts and sharable notebooks.',
-        tags: ['Next.js', 'PostgreSQL', 'WebSockets'],
-        problem: 'Teams explored data in scattered, static screenshots that went stale the moment the underlying numbers changed.',
-        approach: 'Built a live notebook where queries, charts, and notes update in real time and multiple people can explore the same session together.',
-        result: 'Replaced static reporting with a shared live workspace, keeping everyone on the same, current view of the data.',
-        github: '#',
-        demo: '#'
+        year: '2026',
+        icon: 'fa-laptop-code',
+        role: 'Personal project',
+        description: 'A lightweight, responsive portfolio for sharing projects, experience, and contact links.',
+        tags: ['HTML', 'CSS', 'JavaScript', 'Accessibility'],
+        problem: 'A public profile should make current work easy to understand without hiding the details behind a framework or build step.',
+        approach: 'Built a dependency-free static site with a light/dark theme, responsive navigation, project case-study modals, accessible interactions, and SEO metadata.',
+        result: 'Created a fast, maintainable home for current work and a direct résumé download.',
+        github: 'https://github.com/abhaypratapsinghpundir/Portfolio',
+        demo: 'https://abhaypratapsinghpundir.github.io/Portfolio/'
     },
     {
-        title: 'AutoLabel',
-        category: 'tools',
+        title: 'FindMyLand',
+        category: 'web',
         year: '2024',
-        icon: 'fa-tags',
-        role: 'ML Engineer',
-        description: 'Semi-automated dataset labeling tool with active-learning suggestions.',
-        tags: ['Python', 'Streamlit', 'scikit-learn'],
-        problem: 'Hand-labeling training data was slow, expensive, and the most tedious part of every ML project.',
-        approach: 'Built a labeling UI that pre-labels with a lightweight model and uses active learning to surface the most informative, uncertain examples first.',
-        result: 'Cut manual labeling effort substantially by focusing human time only where the model was genuinely unsure.',
-        github: '#',
-        demo: '#'
+        icon: 'fa-house',
+        role: 'Full-stack project',
+        description: 'A platform exploring how rural homes can become more discoverable and available to a global audience.',
+        tags: ['JavaScript', 'Node.js', 'React', 'REST API'],
+        problem: 'Rural homes and land can be difficult to discover outside local networks and traditional listings.',
+        approach: 'Built a web application with separate client and API layers, iterating on features and resolving bugs as the product developed.',
+        result: 'Published a working project with a live deployment and an extensible full-stack structure.',
+        github: 'https://github.com/abhaypratapsinghpundir/FindMyLand',
+        demo: 'https://findmyland.onrender.com/'
+    },
+    {
+        title: 'GitHub Actions Course',
+        category: 'tools',
+        year: '2025',
+        icon: 'fa-gears',
+        role: 'Learning project',
+        description: 'Examples and notes for building CI/CD workflows with GitHub Actions.',
+        tags: ['GitHub Actions', 'CI/CD', 'YAML'],
+        problem: 'Reliable delivery depends on making build, test, and release checks repeatable and visible to the team.',
+        approach: 'Collected hands-on examples and notes while learning the building blocks of GitHub Actions workflows.',
+        result: 'Created a reusable reference for experimenting with automation and improving delivery pipelines.',
+        github: 'https://github.com/abhaypratapsinghpundir/gh-actions-course',
+        demo: null
     }
 ];
 
@@ -190,8 +176,8 @@ function renderProjects() {
             </div>
             <div class="pc-links">
                 <span class="pc-link pc-casestudy">Case study <i class="fas fa-arrow-right"></i></span>
-                <a class="pc-link" href="${p.github}" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
-                <a class="pc-link" href="${p.demo}" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square"></i> Demo</a>
+                ${p.github ? `<a class="pc-link" href="${p.github}" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>` : ''}
+                ${p.demo ? `<a class="pc-link" href="${p.demo}" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square"></i> Demo</a>` : ''}
             </div>
         </article>
     `).join('');
@@ -233,8 +219,8 @@ function initProjectModal() {
                 <p>${p.result}</p>
             </div>
             <div class="modal-actions">
-                <a class="btn btn-primary" href="${p.demo}" target="_blank" rel="noopener">View live <i class="fas fa-arrow-up-right-from-square"></i></a>
-                <a class="btn btn-ghost" href="${p.github}" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source code</a>
+                ${p.demo ? `<a class="btn btn-primary" href="${p.demo}" target="_blank" rel="noopener">View live <i class="fas fa-arrow-up-right-from-square"></i></a>` : ''}
+                ${p.github ? `<a class="btn btn-ghost" href="${p.github}" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source code</a>` : ''}
             </div>
         `;
         lastFocused = document.activeElement;

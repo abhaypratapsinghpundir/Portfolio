@@ -1,7 +1,7 @@
 # Abhay · Portfolio
 
-A minimalist, Apple-inspired personal portfolio for **Abhay — AI Software Engineer**.
-Built as a fast, dependency-free static site (HTML + CSS + vanilla JS).
+A fast, dependency-free personal portfolio for **Abhay Pundir — full-stack developer and test automation engineer**.
+It highlights current work across web applications, APIs, cloud platforms, and quality engineering.
 
 🔗 **Live (local):** open `index.html`, or serve it with `npx serve`.
 
@@ -12,7 +12,7 @@ Built as a fast, dependency-free static site (HTML + CSS + vanilla JS).
 - **Sections** — Hero, About (skills + stats), Projects, Contact.
 - **Data-driven projects** — every card is generated from the `PROJECTS` array in `scripts/main.js`; add/remove projects by editing that array.
 - **Project case-study modals** — click any card for a Problem → Approach → Result write-up.
-- **Filterable project grid** — All / AI·ML / Web / Tools.
+- **Filterable project grid** — All / Testing / Web / Tools.
 - **Contact form** — client-side validation, submits via `mailto:`.
 - **SEO ready** — Open Graph + Twitter cards, JSON-LD `Person` schema, favicon.
 - **Accessible & responsive** — keyboard-navigable, reduced-motion support, mobile menu.
@@ -28,7 +28,7 @@ Plain **HTML5**, **CSS3** (custom properties / design tokens), and **vanilla Jav
 ├── index.html          # markup + meta
 ├── styles/main.css     # design tokens + all styling
 ├── scripts/main.js     # theme, nav, projects data, modal, contact form
-└── assests/            # images, favicon, (résumé pdf)
+└── assests/            # images, favicon, and résumé PDF
 ```
 
 ## Run locally
@@ -45,7 +45,7 @@ Or simply double-click `index.html`.
 
 - **Projects:** edit the `PROJECTS` array in `scripts/main.js`.
 - **Theme colors / spacing:** edit the CSS variables at the top of `styles/main.css`.
-- **Résumé:** drop your PDF at `assests/Abhay_Resume.pdf`.
+- **Résumé:** replace `assests/Abhay_Resume.pdf` with the latest PDF before publishing.
 
 ## Contact
 
@@ -53,3 +53,7 @@ Or simply double-click `index.html`.
 - GitHub — [@abhaypratapsinghpundir](https://github.com/abhaypratapsinghpundir)
 - LinkedIn — [abhay-pratap-singh-pundir](https://www.linkedin.com/in/abhay-pratap-singh-pundir/)
 - X — [@OneEyedAbhay](https://x.com/OneEyedAbhay)
+
+## Deployment
+
+The site is published with GitHub Pages at [abhaypratapsinghpundir.github.io/Portfolio](https://abhaypratapsinghpundir.github.io/Portfolio/).
